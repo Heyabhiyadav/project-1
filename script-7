@@ -1,0 +1,20 @@
+const menuBarEl = document.getElementById("menuBar");
+const menuMobileEl = document.querySelector('.menu_mobile');
+const onClose = () => {
+	menuMobileEl.classList.toggle('show_menu');
+};
+menuBarEl.addEventListener("click",() => {
+	onClose();
+});
+
+// var video = document.querySelectorAll('video');
+// video.forEach(play => play.addEventListener('click',() =>{
+//  play.classList.toggle('active');
+//  if(play.paused){
+//   play.play();
+//  }
+//  else{
+//   play.pause();
+//   play.currentTime = 0;
+//  }
+// }));
